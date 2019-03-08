@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-md navbar-light navbar-laravel" >
-  <div class="container-fluid" >
+  <div class="container-fluid ml-5 mr-5" >
     <!-- Brand -->
     <a class="navbar-brand" href="{{ url('/') }}" >
       <div style="display:flex; align-items: center;" >
