@@ -25,11 +25,10 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent" >
       <!-- Left Side Of Navbar -->
-      <ul class="navbar-nav mr-auto" >
+    <ul class="navbar-nav mr-auto" >
+    </ul >
 
-      </ul >
-
-      <!-- Right Side Of Navbar -->
+    <!-- Right Side Of Navbar -->
       <ul class="navbar-nav ml-auto list-inline" >
         <!-- Links -->
         <li class="nav-item list-inline-item" >
@@ -48,6 +47,7 @@
           <a class="nav-link @if ($sc_active == "contact")
             has-text-black @endif" href="{{ route('contact') }}" >Contact</a >
         </li >
+
         <!-- Authentication Links -->
         @guest
           <li class="nav-item list-inline-item" >
@@ -59,15 +59,13 @@
             @endif
           </li >
         @else
-          <li class="nav-item list-inline-item" >
-            <div class="ml-1" >
-              <img src="{{ $sc_adorableAvatar }}"
-                   class="rounded-circle"
-                   style="border: 2px solid white;" >
-            </div >
+          <li class="nav-item list-inline-item ml-2" >
+            <a href="{{ route('profile', auth()->id()) }}" >
+              <img src="{{ App\Helpers\Avatar::avatar(auth()->user(), config('avatar_size.icon'))  }}"
+                   class="rounded-circle border-default" >
+            </a >
           </li >
           <li class="nav-item dropdown list-inline-item" >
-
             <a id="navbarDropdown"
                class="nav-link dropdown-toggle"
                href="#"

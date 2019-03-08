@@ -23,21 +23,38 @@ a:hover {
 }
 
 .navbar-underlined {
-  -webkit-text-decoration: underline #386d8b;
-          text-decoration: underline #386d8b;
+  -webkit-text-decoration: underline #406e8e;
+          text-decoration: underline #406e8e;
 }
 
 .navbar-underlined:hover {
-  -webkit-text-decoration: underline #386d8b !important;
-          text-decoration: underline #386d8b !important;
+  -webkit-text-decoration: underline #406e8e !important;
+          text-decoration: underline #406e8e !important;
 }
 
 .dropdown-menu {
   min-width: 2em !important;
 }
 
+.border-default {
+  border: 3px solid #406e8e;
+}
+
 .is-complete {
   text-decoration: line-through;
+}
+
+.text-black-main {
+  color: #222526 !important;
+}
+
+.profile-card:hover {
+  -webkit-filter: brightness(0.9);
+          filter: brightness(0.9);
+}
+
+.avatar-icon {
+  border-radius: 50%;
 }
 
 .i-sm {
@@ -48,10 +65,6 @@ a:hover {
 .i-md {
   /* .5em larger than fa-2x */
   font-size: 2.5em;
-}
-
-.text-black-main {
-  color: #222526 !important;
 }
 
 .btn-i-primary,

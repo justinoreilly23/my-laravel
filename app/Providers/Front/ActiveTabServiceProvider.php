@@ -25,7 +25,6 @@ class ActiveTabServiceProvider extends ServiceProvider {
     public function boot()
     {
         $activeTabCont = new ActiveTabController();
-
         view()->share('sc_active', $activeTabCont->activeTab());
     }
 }

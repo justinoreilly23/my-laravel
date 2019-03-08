@@ -26,6 +26,10 @@ class ActiveTabController extends Controller {
                 $this->activeTab = "contact";
             break;
 
+            case strpos($uri, "users") !== false :
+                $this->activeTab = " ";
+            break;
+
             case strpos($uri, "login") !== false :
                 $this->activeTab = "login";
             break;

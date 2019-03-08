@@ -68,9 +68,32 @@ a:hover
   min-width : 2em !important;
 }
 
+.border-default
+{
+  border : 3px solid $bgDefault;
+}
+
 .is-complete
 {
   text-decoration : line-through;
+}
+
+.text-black-main
+{
+  color : $colDark !important;
+}
+
+.profile-card
+{
+  &:hover
+  {
+    filter : brightness(.9);
+  }
+}
+
+.avatar-icon
+{
+  border-radius : 50%;
 }
 
 .i-sm
@@ -83,11 +106,6 @@ a:hover
 {
   /* .5em larger than fa-2x */
   font-size : 2.5em;
-}
-
-.text-black-main
-{
-  color : $colDark !important;
 }
 
 .btn-i-primary,

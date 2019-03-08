@@ -9,7 +9,9 @@ class ProfileController extends Controller {
 
     public function index()
     {
-        return view('profile.index');
+        $users = User::all();
+
+        return view('profile.index', compact('users'));
     }
 
     public function show(User $user)

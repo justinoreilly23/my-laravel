@@ -48,6 +48,7 @@ Route::middleware(['auth', 'can:interact,project'])->group(function () {
  * * * * * * * * * * * * * * * *
 */
 Route::middleware('auth')->group(function () {
-    Route::get('/users/{user}', 'ProfileController@show')->name('profile');
+    Route::get('/users', 'ProfileController@index')->name('users'); // Index
+    Route::get('/users/{user}', 'ProfileController@show')->name('profile'); // Show
 });
 

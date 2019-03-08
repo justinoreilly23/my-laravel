@@ -2,14 +2,12 @@
 
 namespace App\Providers\Profile;
 
-use App\Http\Controllers\AdorableAvatarsController;
+use App\Helpers\Avatar;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 
 class AdorableAvatarsServiceProvider extends ServiceProvider {
-
-    public $adorableAvatarsCont;
 
     /**
      * Register services.
@@ -18,7 +16,7 @@ class AdorableAvatarsServiceProvider extends ServiceProvider {
      */
     public function register()
     {
-        //
+        require app_path('Helpers/Avatar.php');
     }
 
     /**
@@ -28,11 +26,6 @@ class AdorableAvatarsServiceProvider extends ServiceProvider {
      */
     public function boot()
     {
-        $this->adorableAvatarsCont = new AdorableAvatarsController();
-
-        View::composer('layouts.master',
-            function ($view) {
-                view()->share('sc_adorableAvatar', $this->adorableAvatarsCont->avatar());
-            });
+        //
     }
 }
