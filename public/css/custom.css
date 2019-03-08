@@ -22,9 +22,18 @@ a:hover {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
-.dropdown,
+.navbar-underlined {
+  -webkit-text-decoration: underline #386d8b;
+          text-decoration: underline #386d8b;
+}
+
+.navbar-underlined:hover {
+  -webkit-text-decoration: underline #386d8b !important;
+          text-decoration: underline #386d8b !important;
+}
+
 .dropdown-menu {
-  border-radius: 0 !important;
+  min-width: 2em !important;
 }
 
 .is-complete {
@@ -39,6 +48,10 @@ a:hover {
 .i-md {
   /* .5em larger than fa-2x */
   font-size: 2.5em;
+}
+
+.text-black-main {
+  color: #222526 !important;
 }
 
 .btn-i-primary,
@@ -114,10 +127,6 @@ a:hover {
   background-color: transparent;
   outline: none;
   border: none;
-}
-
-.dropdown-menu {
-  min-width: 1em !important;
 }
 
 /* FROST */

@@ -17,11 +17,12 @@ $cyan : #6CB2EB;
 
 /* Ethereal #1 - coolors.co/293132-4c5a5b-406e8e-93b7be-fffffa */
 
-$bgDefault : rgba(64, 110, 142, 1);
+$bgDefault : rgb(64, 110, 142);
 $bgDark : rgba(41, 49, 50, 1);
 $bgHighlight : rgba(76, 90, 91, 1);
 $colHighlight : rgba(147, 183, 190, 1);
 $colDefault : rgba(255, 255, 250, 1);
+$colDark : #222526;
 
 hr
 {
@@ -48,9 +49,23 @@ a:hover
   box-shadow       : 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
+.navbar-underlined
+{
+  text-decoration : underline $bgDefault;
+  &:hover
+  {
+    text-decoration : underline $bgDefault !important;
+  }
+}
+
 .dropdown, .dropdown-menu
 {
-  border-radius : 0 !important;
+  //border-radius : 0 !important;
+}
+
+.dropdown-menu
+{
+  min-width : 2em !important;
 }
 
 .is-complete
@@ -68,6 +83,11 @@ a:hover
 {
   /* .5em larger than fa-2x */
   font-size : 2.5em;
+}
+
+.text-black-main
+{
+  color : $colDark !important;
 }
 
 .btn-i-primary,
@@ -157,11 +177,6 @@ a:hover
   background-color : transparent;
   outline          : none;
   border           : none;
-}
-
-.dropdown-menu
-{
-  min-width : 1em !important;
 }
 
 /* FROST */

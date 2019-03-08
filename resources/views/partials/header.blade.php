@@ -3,13 +3,13 @@
     <!-- Brand -->
     <a class="navbar-brand" href="{{ url('/') }}" >
       <div style="display:flex; align-items: center;" >
-        <div class="mr-2" >
+        <div class="mr-1" >
           <img src="{{ asset('android-chrome-192x192.png') }}"
                alt="Ethereal"
                style="min-width: 36px; max-width: 36px;" class="fa-lg" >
         </div >
-        <div class="navbar-brand text-black-50" >
-          <h2 >Ethereal</h2 >
+        <div class="navbar-brand text-black-main navbar-underlined" >
+          <h2 >thereal</h2 >
         </div >
       </div >
     </a >
