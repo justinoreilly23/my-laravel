@@ -1,17 +1,17 @@
 <nav class="navbar navbar-expand-md navbar-light navbar-laravel" >
-  <div class="container" >
+  <div class="container-fluid" >
     <!-- Brand -->
-    <a class="navbar-brand mb-0 pb-0 pt-2" href="{{ url('/') }}" >
-      <ul class="navbar-nav nav list-inline" >
-        <li class="nav-item mr-1" >
+    <a class="navbar-brand" href="{{ url('/') }}" >
+      <div style="display:flex; align-items: center;" >
+        <div class="mr-2" >
           <img src="{{ asset('android-chrome-192x192.png') }}"
                alt="Ethereal"
-               style="min-width: 36px; max-width: 36px;" >
-        </li >
-        <li class="nav-item text-black-50" >
-          <h2 >thereal</h2 >
-        </li >
-      </ul >
+               style="min-width: 36px; max-width: 36px;" class="fa-lg" >
+        </div >
+        <div class="navbar-brand text-black-50" >
+          <h2 >Ethereal</h2 >
+        </div >
+      </div >
     </a >
     <button class="navbar-toggler"
             type="button"
