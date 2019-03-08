@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Auth;
 
 class AdorableAvatarsController extends Controller {
 
-    protected $sizeOfAvatar = 32;
+    protected $sizeOfAvatar = 40;
 
     public function avatar()
     {

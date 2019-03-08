@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Ethereal'),
+    'name' => env('APP_NAME', 'Laravel'),
 
     /*
     |--------------------------------------------------------------------------
@@ -182,6 +182,7 @@ return [
         \App\Providers\Front\TitleServiceProvider::class,
         \App\Providers\Profile\AdorableAvatarsServiceProvider::class,
         \App\Providers\Front\ThemeServiceProvider::class,
+        \App\Providers\Front\ActiveTabServiceProvider::class,
 
     ],
 

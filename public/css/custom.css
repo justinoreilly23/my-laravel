@@ -1,7 +1,5 @@
 /* Ethereal #1 - coolors.co/293132-4c5a5b-406e8e-93b7be-fffffa */
 
-/* RGB */
-
 hr {
   background-color: silver;
   width: 55%;
@@ -264,6 +262,5 @@ a:hover {
   /* fallback for old browsers */
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #E5E5BE, #003973);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 

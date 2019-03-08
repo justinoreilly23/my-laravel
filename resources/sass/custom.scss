@@ -17,13 +17,11 @@ $cyan : #6CB2EB;
 
 /* Ethereal #1 - coolors.co/293132-4c5a5b-406e8e-93b7be-fffffa */
 
-/* RGB */
-$primary : rgba(64, 110, 142, 1);
-$color1 : rgba(41, 49, 50, 1);
-$color2 : rgba(76, 90, 91, 1);
-$color3 : rgba(64, 110, 142, 1);
-$color4 : rgba(147, 183, 190, 1);
-$color5 : rgba(255, 255, 250, 1);
+$bgDefault : rgba(64, 110, 142, 1);
+$bgDark : rgba(41, 49, 50, 1);
+$bgHighlight : rgba(76, 90, 91, 1);
+$colHighlight : rgba(147, 183, 190, 1);
+$colDefault : rgba(255, 255, 250, 1);
 
 hr
 {
@@ -305,5 +303,5 @@ a:hover
   /* Horizon */
   background : #003973; /* fallback for old browsers */
   background : -webkit-linear-gradient(to right, #E5E5BE, #003973); /* Chrome 10-25, Safari 5.1-6 */
-  background : linear-gradient(to right, #E5E5BE, #003973); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background : linear-gradient(to right, #E5E5BE, #003973);
 }

@@ -12,6 +12,7 @@ class ThemeController extends Controller {
             "royal",
             "pizelex",
             "frozen",
+            "",
         ];
 
 
