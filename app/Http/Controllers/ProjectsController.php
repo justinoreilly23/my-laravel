@@ -7,7 +7,6 @@ use App\Project;
 use Illuminate\Http\Request;
 use App\Http\Requests\StoreProjectRequest;
 use App\Http\Requests\UpdateProjectRequest;
-use App\Http\Requests\DeleteProjectRequest;
 
 class ProjectsController extends Controller {
 
@@ -40,16 +39,16 @@ class ProjectsController extends Controller {
         return view('projects.edit', compact('project'));
     }
 
-    public function update(UpdateProjectRequest $request)
+    public function update(Project $project, UpdateProjectRequest $request)
     {
-        Project::update($request->all());
+        $project->update($request->all());
 
-        return view('projects.show');
+        return view('projects.show', compact('project'));
     }
 
-    public function destroy()
+    public function destroy(Project $project)
     {
-        Project::delete();
+        $project->delete();
 
         return redirect('/projects');
     }
