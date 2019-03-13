@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -17,7 +18,6 @@ Route::get('/contact', 'PageController@contact')->name('contact');
 
 Route::resource('projects', 'ProjectsController')->middleware('auth');
 
-Auth::routes();
 
 
 /*
@@ -52,3 +52,6 @@ Route::middleware('auth')->group(function () {
     Route::get('/users/{user}', 'ProfileController@show')->name('profile'); // Show
 });
 
+Route::get('/logout','Auth\LoginController@logout')->name('logout');
+
+Auth::routes();

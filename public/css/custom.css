@@ -36,6 +36,26 @@ a:hover {
   min-width: 2em !important;
 }
 
+.flash-message {
+  display: none;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  padding: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  border-bottom-right-radius: 0.25rem !important;
+  border-bottom-left-radius: 0.25rem !important;
+}
+
+.admin-top {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
 .border-default {
   border: 3px solid #406e8e;
 }

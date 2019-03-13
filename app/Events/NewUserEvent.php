@@ -17,6 +17,8 @@ class NewUserEvent {
      */
     public function __construct($user)
     {
+        session()->flash('message', "Welcome to Ethereal," . auth()->user()->username . "!");
+
         $this->user = $user;
     }
 }

@@ -28,6 +28,9 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" >
   <link rel="manifest" href="/site.webmanifest" >
 
+  <!-- jQuery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script >
+
   <!-- Providers/TitleServiceProvider.php -->
   <title >
     {{ $sc_title }}
@@ -36,9 +39,9 @@
 </head >
 <body class="theme-{{ $sc_theme }}" >
 
-@if(auth()->id() == 1 && auth()->check())
-  @include('partials.admin')
-@endif
+@include('partials.admin')
+
+@include('partials.message')
 
 @include('partials.header')
 
@@ -47,14 +50,10 @@
     @yield('content')
   </div >
 @endif
-
 @include('partials.footer')
 
 <!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous" ></script >
+<!-- Popper.js, then Bootstrap JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous" ></script >

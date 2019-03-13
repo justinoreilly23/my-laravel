@@ -17,6 +17,8 @@ class ProjectCreatedEvent {
      */
     public function __construct($project)
     {
+        session()->flash('message', 'Project successfully created!');
+
         $this->project = $project;
     }
 }
