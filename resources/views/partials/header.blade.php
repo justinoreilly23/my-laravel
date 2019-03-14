@@ -1,7 +1,7 @@
-<nav class="navbar navbar-expand-md navbar-light navbar-laravel" >
+<nav class="sticky-top navbar navbar-expand-md navbar-light navbar-laravel navbar-sticky">
   <div class="container-fluid ml-5 mr-5" >
     <!-- Brand -->
-    <a class="navbar-brand" href="{{ url('/') }}" >
+    <a class="navbar-brand" href="{{ route('home') }}" >
       <div style="display:flex; align-items: center;" >
         <div class="mr-1" >
           <img src="{{ asset('android-chrome-192x192.png') }}"

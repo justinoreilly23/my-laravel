@@ -68,6 +68,12 @@ a:hover
   min-width : 2em !important;
 }
 
+.navbar-sticky
+{
+  position : sticky !important;
+  box-shadow: grey 0 1px 12px;
+}
+
 .flash-message
 {
   display                    : none;
