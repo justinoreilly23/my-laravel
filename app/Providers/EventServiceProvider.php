@@ -4,6 +4,8 @@ namespace App\Providers;
 
 use App\Events\NewUserEvent;
 use App\Events\ProjectCreatedEvent;
+use App\Listeners\NewProjectFlash;
+use App\Listeners\NewUserFlash;
 use App\Listeners\SendNewUserNotification;
 use App\Listeners\SendProjectCreatedNotification;
 use Illuminate\Support\Facades\Event;
@@ -24,10 +26,12 @@ class EventServiceProvider extends ServiceProvider
         ],
 
         ProjectCreatedEvent::class => [
+            NewProjectFlash::class,
             SendProjectCreatedNotification::class,
         ],
 
         NewUserEvent::class => [
+            NewUserFlash::class,
             SendNewUserNotification::class,
         ]
     ];

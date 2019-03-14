@@ -177,8 +177,13 @@ return [
         App\Providers\SocialServiceProvider::class,
 
         /*
-         * Other Service Providers
-         */
+         * * * * * * * * * * * * * * * *
+         * * * * * * * * * * * * * * * *
+                  My Providers
+         * * * * * * * * * * * * * * * *
+         * * * * * * * * * * * * * * * *
+        */
+
         \App\Providers\Front\TitleServiceProvider::class,
         \App\Providers\Profile\AdorableAvatarsServiceProvider::class,
         \App\Providers\Front\ThemeServiceProvider::class,
@@ -232,6 +237,16 @@ return [
         'URL'          => Illuminate\Support\Facades\URL::class,
         'Validator'    => Illuminate\Support\Facades\Validator::class,
         'View'         => Illuminate\Support\Facades\View::class,
+
+        /*
+         * * * * * * * * * * * * * * * *
+         * * * * * * * * * * * * * * * *
+                  My Classes
+         * * * * * * * * * * * * * * * *
+         * * * * * * * * * * * * * * * *
+        */
+
+        'Helper' => App\Helper::class,
     ],
 
 ];

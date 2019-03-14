@@ -1,8 +1,8 @@
 <script >
 
   const message = "#flash-message";
-  const time    = 1000;
-  const wait    = 3000;
+  const time    = 800;
+  const wait    = 2000;
 
   $(document).ready(function() {
     $(message).ready(function() {
