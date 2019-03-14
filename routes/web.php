@@ -15,9 +15,9 @@ Route::get('/', 'PageController@home');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/about', 'PageController@about')->name('about');
 Route::get('/contact', 'PageController@contact')->name('contact');
-
 Route::resource('projects', 'ProjectsController')->middleware('auth');
 
+Auth::routes();
 
 
 /*
@@ -51,7 +51,3 @@ Route::middleware('auth')->group(function () {
     Route::get('/users', 'ProfileController@index')->name('users'); // Index
     Route::get('/users/{user}', 'ProfileController@show')->name('profile'); // Show
 });
-
-Route::get('/logout','Auth\LoginController@logout')->name('logout');
-
-Auth::routes();
