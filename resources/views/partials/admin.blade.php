@@ -1,5 +1,5 @@
 @if(auth()->id() == 1 && auth()->check())
-  <div class="text-center position-sticky admin-top">
+  <div class="text-center admin-top">
     <div class="bg-warning text-white" >
       <div class="columns is-centered is-vcentered mr-auto" >
         <div class="column is-narrow" >

@@ -1,4 +1,4 @@
-<nav class="sticky-top navbar navbar-expand-md navbar-light navbar-laravel navbar-sticky">
+<nav class="navbar navbar-expand-md navbar-light navbar-laravel sticky-top navbar-sticky">
   <div class="container-fluid ml-5 mr-5" >
     <!-- Brand -->
     <a class="navbar-brand" href="{{ route('home') }}" >
