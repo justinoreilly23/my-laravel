@@ -27,6 +27,6 @@ class NewUserFlash {
      */
     public function handle(NewUserEvent $event)
     {
-       Helper::flash("Welcome to Ethereal," . auth()->user()->username . "!");
+        Helper::flash("Welcome to Ethereal," . $event->user->username . "!");
     }
 }
